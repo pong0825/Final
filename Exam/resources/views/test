@@ -1,0 +1,2 @@
+ {{print_r($weather["Headline"]["Text"])}}
+{{print_r($weather["Headline"]["Category"])}}

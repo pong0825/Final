@@ -14,7 +14,7 @@ class MathController extends Controller
 
     public function list(Request $request){
 
-      $token = "dXQLdrFjX2qOGlCzedsJ8ITdZpacHYri";
+      $token = "a4vxal7FOmj7b9vziE1jrJoKLZ3IpSpi";
       $value1 = $request->input("q");
       $value2 = $request->input("language");
 
@@ -23,7 +23,7 @@ class MathController extends Controller
         return view("welcome", ['data'=>$data]);
       }
 
-      $data = Http::get("http://dataservice.accuweather.com/locations/v1/cities/search?apikey=$token&q=$value1&language=$value2&details=false")->json();
+      $data = Http::get("http://dataservice.accuweather.com/locations/v1/cities/search?apikey=$token&q=$value1&language=en-us&details=false")->json();
       $key = $data[0]["Key"];
       $weather = Http::get("http://dataservice.accuweather.com/forecasts/v1/daily/1day/$key?apikey=$token")->json();
       return view("welcome", ['weather'=>$weather]);

@@ -39,9 +39,9 @@
           @isset($weather)
           <div class="col-3"><h4>Weather</h4></div>
           <div class="col-9">
-            {{print_r($weather["Headline"]["Text"])}}
-            {{print_r($weather["Headline"]["Category"])}}
-            {{print_r($weather["Headline"]["EndDate"])}}
+          {{print_r($weather["Headline"]["Text"])}}
+          {{print_r($weather["Headline"]["Category"])}}
+          {{print_r($weather["Headline"]["EndDate"] )}}
           </div>
           @endisset
         </div>
