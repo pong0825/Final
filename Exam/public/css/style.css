@@ -1,0 +1,27 @@
+body {
+  background-image: url("../images/Clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-opacity-dark {
+  background-color: rgba(201, 246, 255, 0.849);
+  border: solid black 2px;
+}
+
+.bg-opacity-secondary {
+  background-color: rgba(224, 224, 224, 0.74);
+}
+
+.bg-opacity-tan {
+  background-color: rgba(92, 166, 181, 0.822);
+}
+.container {
+  max-width: 960px!important;
+}
+
+.m-2 {
+  align-items: center;
+  justify-content: center;
+}
